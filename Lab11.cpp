@@ -6,12 +6,12 @@
 
 using namespace std;
 
-template <class T>
+template <class T> // clasa template
 class Stack
 {
 private:
     vector<int> stack; //Alternativ pt primul exercitiu se poate scrie T stack[10];
-    int topp, size;
+    int topp, size; //topp contor pentru elementele introduse in stiva, size marimea maxima a stivei
 
 public:
     bool isEmpty()
@@ -31,7 +31,7 @@ public:
 
         if(topp >  5)
         {
-            cout <<"Stiva peste elementul maxim";
+            cout <<"Stiva peste elementul maxim!\n";
             return;
         }
 
@@ -105,8 +105,10 @@ int main()
     int& nr = s.top();
 
 
+    
+    cout << endl;
     s.Display();
-
+    cout << endl;
 
     cout << "Referinta catre cel mai recent adaugat element : " << nr << endl;
 
